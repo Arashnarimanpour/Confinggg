@@ -1,0 +1,21 @@
+1- enable (go to layer 2)
+2- conf t (go to layer 3 _ this is config layer)
+3- set ip for our interface in router and for our vlan in switch
+#in switch : 1- interface vlan , 2- ip address 192.168.1.1 255.255.255.0 
+#in router : 1- interface GigabitEthernet 0/0/0 , 2- ip address 192.168.1.2
+4- no shutdown
+5- set hostname --->>  hostname "your_hostname"
+6- set ip domin-name --->>  ip domain-name "your domain_name"
+7 makeing key for SSH --->> crypto key generate rsa general-key
+# you can change size of key, this is modular
+8- set password for enable and user name in layer 3 ---> enable "your_password" , username "your_username" 
+9- line vty 0 
+10- login local
+12- in line vty layer set this if you want underestand just SSH protocol not telnet --->>  transport input SSH
+13- finally you going to CMD in your system and write this command for using SSH and connect to your device :
+--->> SSH -L "youre_username" "device_IP"
+Additional notes :
+-If you want your password showing encrypt when you use "running_config" command activate encrption service with with this command in layer 2 : 
+       --->> service password-encryption 
+-if you want your password being more stronger user "secret" command instead of "password" command when you are encrypting 
+-if you want go to layer 2 directly from any wher you are, use "end" command.
