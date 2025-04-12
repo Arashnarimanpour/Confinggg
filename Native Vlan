@@ -1,0 +1,4 @@
+- first we use 2 switch and connect to each of them 2 computer & connect switchs togeather .
+- we set TRUNK on one of those switchs port with this command : "switchport mode trunk" .
+- we can see TRUNK ports in switch with use this command in provilege layer : "show interfaces trunk"
+- in layer 3 we do this in 2 switchs : 1-switchport mode access  2-switchport mode vlan 2
