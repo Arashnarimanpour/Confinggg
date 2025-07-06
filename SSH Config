@@ -1,4 +1,4 @@
-1- enable (go to layer 2)
+1- `enable (go to layer 2)`
 2- conf t (go to layer 3 _ this is config layer)
 3- set ip for our interface in router and for our vlan in switch
 #in switch : 1- interface vlan , 2- ip address 192.168.1.1 255.255.255.0 
